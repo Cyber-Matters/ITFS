@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITFS - iTech Facilities and Solutions</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        :root {
+            --primary: #0068ed;
+            --primary-hover: #0056c4;
+            --secondary: #8c8489;
+            --secondary-hover: #7a737a;
+            --dark-blue: #0844a0;
+        }
+        body {
+            color: #8c8489;
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: var(--primary-hover);
+        }
+        .hero {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 100px 0 50px;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            color: var(--primary);
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 1.5em;
+        }
+        .cta-button {
+            background-color: white;
+            color: var(--primary);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: var(--dark-blue);
+            color: white;
+        }
+        .section {
+            padding: 50px 0;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+        .why-choose-us ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .why-choose-us li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        .why-choose-us li::before {
+            content: '✓';
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        footer {
+            background-color: var(--dark-blue);
+            color: white;
+            padding: 40px 0;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-section {
+            flex: 1;
+            margin-bottom: 20px;
+            min-width: 200px;
+        }
+        .footer-section h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        .social-icons a {
+            color: white;
+            font-size: 1.5em;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        .license-info {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: rgba(255,255,255,0.7);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--primary);
+        }
+        a {
+            color: var(--primary);
+        }
+        a:hover {
+            color: var(--primary-hover);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why-choose-us">Why Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="container">
+            <img src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo3.png" alt="ITFS Logo" style="max-width: 200px; margin-bottom: 20px;">
+            <h1>Welcome to ITFS – Your Partner in Excellence</h1>
+            <p>Looking for a trusted partner to keep your business clean, safe, and secure? At iTech Facilities and Solutions (ITFS), we bring the right expertise, technology, and care to create spaces that inspire confidence and productivity.</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="services" class="section">
+            <div class="container">
+                <h2>What Makes ITFS Stand Out?</h2>
+                <p>We believe that a clean and secure environment is the foundation of a thriving business. That's why we focus on what you need, why it matters, and how it benefits your business.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="https://via.placeholder.com/80" alt="Cleaning Services">
+                        <h3>Facility Cleaning Services</h3>
+                        <p><strong>Feature:</strong> Tailored cleaning solutions for every type of space.</p>
+                        <p><strong>Advantage:</strong> Maintain a hygienic and welcoming environment with a team that understands your unique requirements.</p>
+                        <p><strong>Benefit:</strong> Enhance workplace morale, impress visitors, and reduce health risks.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://via.placeholder.com/80" alt="Security Guarding">
+                        <h3>Security Guarding Services</h3>
+                        <p><strong>Feature:</strong> Professionally trained security personnel.</p>
+                        <p><strong>Advantage:</strong> Flexible guarding options, available 24/7, to suit your business needs.</p>
+                        <p><strong>Benefit:</strong> Protect your assets, staff, and visitors with a visible deterrent and rapid response team.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://via.placeholder.com/80" alt="Security Equipment">
+                        <h3>Security Equipment Solutions</h3>
+                        <p><strong>Feature:</strong> Cutting-edge security technology.</p>
+                        <ul>
+                            <li>Baggage screening systems</li>
+                            <li>Walk-through metal detectors</li>
+                            <li>Handheld security wands</li>
+                        </ul>
+                        <p><strong>Advantage:</strong> Detect potential threats swiftly and accurately with reliable equipment.</p>
+                        <p><strong>Benefit:</strong> Strengthen your security protocols, reduce risk, and ensure peace of mind for all.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-choose-us" class="section" style="background-color: #f8f9fa;">
+            <div class="container">
+                <h2>Why Choose ITFS?</h2>
+                <p>We're not just service providers – we're partners in your success.</p>
+                <div class="why-choose-us">
+                    <ul>
+                        <li><strong>Do you worry about maintaining a safe, clean, and compliant space?</strong><br>We understand these challenges and are here to help.</li>
+                        <li><strong>Do you want to focus on growing your business instead of managing daily operations?</strong><br>Our solutions are designed to free up your time and let you concentrate on what matters most.</li>
+                        <li><strong>Have you struggled to find a provider who listens and adapts to your needs?</strong><br>With ITFS, you get tailored, people-first solutions driven by your goals.</li>
+                    </ul>
+                </div>
+                <h3>What We Promise You</h3>
+                <ul>
+                    <li><strong>Improved ROI:</strong> Clean, safe, and secure environments lead to happier employees and customers.</li>
+                    <li><strong>Proactive Support:</strong> We anticipate your needs to deliver solutions before problems arise.</li>
+                    <li><strong>Unmatched Expertise:</strong> Our team is equipped with the latest tools and training to deliver exceptional results.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Your Next Step</h2>
+                <p>Taking the first step is easy:</p>
+                <ol>
+                    <li>Contact Us: Share your challenges and goals.</li>
+                    <li>Get a Tailored Plan: We'll design a solution that meets your unique needs.</li>
+                    <li>Enjoy Peace of Mind: Focus on what you do best, while we take care of the rest.</li>
+                </ol>
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="mailto:info@itfservices.com.au" class="cta-button">Contact Us Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ITFS</h3>
+                    <p>Professional facility management solutions for businesses across Australia.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📍 Suite 7, Level 2, 374 Church St, Parramatta, NSW 2150</p>
+                    <p>📞 Phone: 0433 244 555</p>
+                    <p>📧 Email: info@itfservices.com.au</p>
+                    <p>🌐 Website: www.itfservices.com.au</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+            </div>
+            <div class="license-info">
+                <p>Master Security Licence: [Insert Licence Number]</p>
+                <p>&copy; 2024 iTech Facilities and Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
