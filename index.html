@@ -15,7 +15,12 @@
         }
         body {
             color: #8c8489;
-            scroll-behavior: smooth;
+        }
+        p {
+            color: #8c8489;
+        }
+        li {
+            color: #8c8489;
         }
         .container {
             max-width: 1200px;
@@ -35,34 +40,31 @@
         }
         nav li {
             margin: 0 15px;
+            color: #8c8489;
         }
         nav a {
-            color: var(--primary);
+            color: #0068ed;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s ease;
         }
         nav a:hover {
-            color: var(--primary-hover);
+            color: #0056c4;
         }
         .hero {
-            background-color: var(--primary);
-            color: white;
+            background-color: white;
+            color: #8c8489;
             text-align: center;
             padding: 100px 0 50px;
         }
         .hero h1 {
             font-size: 2.5em;
             margin-bottom: 0.5em;
-            color: var(--primary);
-        }
-        .hero p {
-            font-size: 1.2em;
-            margin-bottom: 1.5em;
+            color: #0068ed;
         }
         .cta-button {
-            background-color: white;
-            color: var(--primary);
+            background-color: #0068ed;
+            color: white;
             padding: 10px 20px;
             border-radius: 5px;
             text-decoration: none;
@@ -70,7 +72,7 @@
             transition: background-color 0.3s ease, color 0.3s ease;
         }
         .cta-button:hover {
-            background-color: var(--dark-blue);
+            background-color: #0056c4;
             color: white;
         }
         .section {
@@ -109,13 +111,13 @@
         }
         .why-choose-us li::before {
             content: '✓';
-            color: var(--primary);
+            color: #0068ed;
             position: absolute;
             left: 0;
             top: 0;
         }
         footer {
-            background-color: var(--dark-blue);
+            background-color: white;
             color: white;
             padding: 40px 0;
         }
@@ -131,7 +133,7 @@
         }
         .footer-section h3 {
             margin-bottom: 15px;
-            color: var(--primary);
+            color: #0068ed;
         }
         .social-icons a {
             color: white;
@@ -146,13 +148,13 @@
             color: rgba(255,255,255,0.7);
         }
         h1, h2, h3, h4, h5, h6 {
-            color: var(--primary);
+            color: #0068ed;
         }
         a {
-            color: var(--primary);
+            color: #0068ed;
         }
         a:hover {
-            color: var(--primary-hover);
+            color: #0056c4;
         }
     </style>
 </head>
@@ -168,7 +170,7 @@
 
     <header class="hero" id="home">
         <div class="container">
-            <img src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo3.png" alt="ITFS Logo" style="max-width: 200px; margin-bottom: 20px;">
+            <img src="images/logo.png" alt="ITFS Logo" style="max-width: 200px; margin-bottom: 20px;">
             <h1>Welcome to ITFS – Your Partner in Excellence</h1>
             <p>Looking for a trusted partner to keep your business clean, safe, and secure? At iTech Facilities and Solutions (ITFS), we bring the right expertise, technology, and care to create spaces that inspire confidence and productivity.</p>
             <a href="#contact" class="cta-button">Get in Touch</a>
@@ -182,28 +184,21 @@
                 <p>We believe that a clean and secure environment is the foundation of a thriving business. That's why we focus on what you need, why it matters, and how it benefits your business.</p>
                 <div class="services-grid">
                     <div class="service-card">
-                        <img src="https://via.placeholder.com/80" alt="Cleaning Services">
                         <h3>Facility Cleaning Services</h3>
                         <p><strong>Feature:</strong> Tailored cleaning solutions for every type of space.</p>
                         <p><strong>Advantage:</strong> Maintain a hygienic and welcoming environment with a team that understands your unique requirements.</p>
                         <p><strong>Benefit:</strong> Enhance workplace morale, impress visitors, and reduce health risks.</p>
                     </div>
                     <div class="service-card">
-                        <img src="https://via.placeholder.com/80" alt="Security Guarding">
+
                         <h3>Security Guarding Services</h3>
                         <p><strong>Feature:</strong> Professionally trained security personnel.</p>
                         <p><strong>Advantage:</strong> Flexible guarding options, available 24/7, to suit your business needs.</p>
                         <p><strong>Benefit:</strong> Protect your assets, staff, and visitors with a visible deterrent and rapid response team.</p>
                     </div>
                     <div class="service-card">
-                        <img src="https://via.placeholder.com/80" alt="Security Equipment">
                         <h3>Security Equipment Solutions</h3>
                         <p><strong>Feature:</strong> Cutting-edge security technology.</p>
-                        <ul>
-                            <li>Baggage screening systems</li>
-                            <li>Walk-through metal detectors</li>
-                            <li>Handheld security wands</li>
-                        </ul>
                         <p><strong>Advantage:</strong> Detect potential threats swiftly and accurately with reliable equipment.</p>
                         <p><strong>Benefit:</strong> Strengthen your security protocols, reduce risk, and ensure peace of mind for all.</p>
                     </div>
@@ -231,16 +226,16 @@
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <section id="contact" class="section" style="margin-bottom: -40px; margin-top: -20px;">
             <div class="container">
                 <h2>Your Next Step</h2>
-                <p>Taking the first step is easy:</p>
-                <ol>
-                    <li>Contact Us: Share your challenges and goals.</li>
-                    <li>Get a Tailored Plan: We'll design a solution that meets your unique needs.</li>
-                    <li>Enjoy Peace of Mind: Focus on what you do best, while we take care of the rest.</li>
+                <p style="color: white">Taking the first step is easy:</p>
+                <ol style="color: white">
+                    <li style="color: white">Contact Us: Share your challenges and goals.</li>
+                    <li style="color: white">Get a Tailored Plan: We'll design a solution that meets your unique needs.</li>
+                    <li style="color: white">Enjoy Peace of Mind: Focus on what you do best, while we take care of the rest.</li>
                 </ol>
-                <div style="text-align: center; margin-top: 30px;">
+                <div style="text-align: center; margin-top: 90px;">
                     <a href="mailto:info@itfservices.com.au" class="cta-button">Contact Us Now</a>
                 </div>
             </div>
